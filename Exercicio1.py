@@ -4,8 +4,8 @@ def classificar_produto(quantidade):
     elif 1 <= quantidade <= 5:
         return "Estoque Baixo"
     elif 6 <= quantidade <= 20:
-        return "Estoque Normal"
+        return "Estoquee Normal"
     elif quantidade > 20:
-        return "Estoque Alto"
+        return "Estoqueee Alto"
     else:
         return "Quantidade inválida"

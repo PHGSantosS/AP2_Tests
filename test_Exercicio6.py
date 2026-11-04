@@ -41,7 +41,7 @@ def test_verificar_se_registrar_atendimento_foi_chamada_com_o_cliente_correto():
 
 def test_registrar_atendimento_nao_foi_chamada_quando_fila_vazia():
     with patch("Exercicio6.obter_proximo_cliente", return_value=None) as mock_obter:
-        with patch("Exercicio6.registrar_ateendimento", return_value=True) as mock_registrar:
+        with patch("Exercicio6.registrar_atendimento", return_value=True) as mock_registrar:
             resultado = atender_proximo_cliente()
 
     assert resultado == "Fila vazia"
