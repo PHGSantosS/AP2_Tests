@@ -4,7 +4,7 @@ def test_classificar_produto():
     assert classificar_produto(0) == "Sem Estoque"
 
 def test_classificar_produto_baixo_estoque():
-    assert classificar_produto(3) == "Estoque Baixo"
+    assert classificar_produto(4) == "Estoque Baixo"
 
 def test_classificar_produto_estoque_normal():
     assert classificar_produto(10) == "Estoquee Normal"
